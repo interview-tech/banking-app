@@ -1,0 +1,39 @@
+<mat-card>
+  <mat-card-content>
+    <h1>
+      {{ "home.client.title" | translate }}
+      <button
+        mat-raised-button
+        (click)="openDialog(clientsDetail)"
+        [disabled]="!clientsDetail.accountsData.length"
+      >
+        {{ "home.client.more" | translate }}
+      </button>
+    </h1>
+    <p>{{ "home.client.subTitle" | translate }}</p>
+    <mat-grid-list cols="4" rowHeight="100px">
+      <mat-grid-tile [colspan]="1" [rowspan]="4">
+        <h3>{{ "home.client.dateOfBirth" | translate }} :</h3>
+        @if(clientsDetail.birthday !== "None"){
+        <p>{{ clientsDetail.birthday | date : "dd/MM/yyyy" }}</p>
+        } @else{
+        <p>{{ clientsDetail.birthday }}</p>
+        }
+
+        <h3>{{ "home.client.firstName" | translate }} :</h3>
+        <p>{{ clientsDetail.firstname }}</p>
+
+        <h3>{{ "home.client.lastName" | translate }} :</h3>
+        <p>{{ clientsDetail.name }}</p>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="3" [rowspan]="4">
+        @if(clientsDetail.accountsData.length){
+        <chart
+          [accountsData]="clientsDetail.accountsData"
+          [clientId]="clientsDetail.id"
+        ></chart>
+        }
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-card-content>
+</mat-card>

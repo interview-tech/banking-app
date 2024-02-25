@@ -1,0 +1,7 @@
+<h2 mat-dialog-title>
+  {{ data.firstname }} {{ data.name }}
+  <mat-icon mat-dialog-close>close</mat-icon>
+</h2>
+<mat-dialog-content>
+  <table-sorting [tableData]="data.accountsData"></table-sorting>
+</mat-dialog-content>

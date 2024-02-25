@@ -1,0 +1,33 @@
+{
+    "home": {
+      "search": {
+        "label": "Filtrer par prénom du client",
+        "placeHolder": "Choisir"
+      },
+      "language": {
+        "label": "Sélectionner la langue"    
+      },
+      "client": {
+        "title": "Identifiant du client",
+        "subTitle": "Informations",
+        "more": "Plus",
+        "dateOfBirth": "Date de naissance",
+        "firstName": "Prénom",
+        "lastName": "Nom de famille",
+        "dialog": {
+          "table": {
+            "account": "Compte",
+            "type": "Type",
+            "balance": "Solde",
+            "dateOfCreation": "Date de création"
+          }
+        },
+        "chart": {
+            "barTitle": "Soldes des comptes par type",
+            "pieTitle": "Répartition des soldes",
+            "accounts": "Comptes",
+            "balance": "Solde"
+          }
+      }
+    }
+  }

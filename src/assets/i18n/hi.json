@@ -1,0 +1,33 @@
+{
+    "home": {
+      "search": {
+        "label": "ग्राहक का पहला नाम द्वारा फिल्टर करें",
+        "placeHolder": "चुनें"
+      },
+      "language": {
+        "label": "भाषा चुनें"    
+      },
+      "client": {
+        "title": "ग्राहक आईडी",
+        "subTitle": "जानकारी",
+        "more": "अधिक",
+        "dateOfBirth": "जन्म तिथि",
+        "firstName": "पहला नाम",
+        "lastName": "अंतिम नाम",
+        "dialog": {
+          "table": {
+            "account": "खाता",
+            "type": "प्रकार",
+            "balance": "संतुलन",
+            "dateOfCreation": "निर्माण की तारीख"
+          }
+        },
+        "chart": {
+            "barTitle": "प्रकार अनुसार खाता संतुलन",
+            "pieTitle": "संतुलन वितरण",
+            "accounts": "खाते",
+            "balance": "संतुलन"
+          }
+      }
+    }
+  }

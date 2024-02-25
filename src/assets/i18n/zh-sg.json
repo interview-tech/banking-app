@@ -1,0 +1,34 @@
+{
+    "home": {
+      "search": {
+        "label": "按客户名过滤",
+        "placeHolder": "选择"
+      },
+      "language": {
+        "label": "选择语言"    
+      },
+      "client": {
+        "title": "客户编号",
+        "subTitle": "信息",
+        "more": "更多",
+        "dateOfBirth": "出生日期",
+        "firstName": "名",
+        "lastName": "姓",
+        "dialog": {
+          "table": {
+            "account": "账户",
+            "type": "类型",
+            "balance": "余额",
+            "dateOfCreation": "创建日期"
+          },
+          "chart": {
+            "barTitle": "按类型分类的账户余额",
+            "pieTitle": "余额分布",
+            "accounts": "账户",
+            "balance": "余额"
+          }
+        }
+      }
+    }
+  }
+  

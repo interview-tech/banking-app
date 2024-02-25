@@ -1,0 +1,33 @@
+{
+  "home": {
+    "search": {
+      "label": "Filter by client first name",
+      "placeHolder": "Pick one"
+    },
+    "language": {
+      "label": "Select Language"    
+    },
+    "client": {
+      "title": "Client Id",
+      "subTitle": "Informations",
+      "more": "More",
+      "dateOfBirth": "Date of Birth",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "dialog": {
+        "table": {
+          "account": "Account",
+          "type": "Type",
+          "balance": "Balance",
+          "dateOfCreation": "Date of creation"
+        }
+      },
+      "chart": {
+        "barTitle": "Account Balances by Type",
+        "pieTitle": "Balance Distribution",
+        "accounts": "Accounts",
+        "balance": "Balance"
+      }
+    }
+  }
+}

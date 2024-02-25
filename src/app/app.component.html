@@ -1,0 +1,41 @@
+<div class="banking-container">
+  <section>
+    <form>
+      <mat-form-field class="search-box" appearance="outline">
+        <mat-label>{{ "home.search.label" | translate }}</mat-label>
+        <mat-icon matTextPrefix>search</mat-icon>
+        <input
+          type="text"
+          [placeholder]="'home.search.placeHolder' | translate"
+          matInput
+          [formControl]="myControl"
+          [matAutocomplete]="auto"
+        />
+        <mat-autocomplete #auto="matAutocomplete">
+          @for (option of filteredOptions | async; track option?.id) {
+          <mat-option [value]="option?.firstname">{{
+            option?.firstname
+          }}</mat-option>
+          }
+        </mat-autocomplete>
+      </mat-form-field>
+
+      <mat-form-field class="language-select" appearance="outline">
+        <mat-label>{{ "home.language.label" | translate }}</mat-label>
+        <mat-select
+          #langSelect
+          [value]="translate.currentLang"
+          (selectionChange)="changeLanguage(langSelect.value)"
+        >
+          @for (lang of translate.getLangs(); track lang) {
+          <mat-option [value]="lang">{{ lang }}</mat-option>
+          }
+        </mat-select>
+      </mat-form-field>
+    </form>
+  </section>
+
+  @for (option of filteredOptions | async; track option?.id) {
+  <clients [clientsDetail]="option"> </clients>
+  }
+</div>
